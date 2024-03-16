@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 8%;
+    background: #deaaff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+
+.logo {
+    position: relative;
+    font-size: 25px;
+    color: #2c63ac;
+    font-weight: 600;
+}
+
+.navbar {
+    position: relative;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #2c63ac;
+    font-weight: 500;
+    margin: 0 20px;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #07090d;
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 50px 8% 0;
+    background: #80ffdb;
+}
+
+.home {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/6499/6499184.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 300px;
+}
+
+.home-content {
+    max-width: 630px;
+}
+
+
+.home-content h1 {
+    position: relative;
+    font-size: 45px;
+    line-height: 1.2;
+}
+
+.home-content h1:nth-child(3) {
+    background: linear-gradient(#096e8a, #b131fa);
+    -webkit-background-clip: text;
+    color: transparent;
+
+}
+
+.home-content p {
+    position: relative;
+    font-size: 16px;
+    margin: 25px 0 30px;
+}
+
+.home-content .btn-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    
+}
+
+.btn {
+    padding: 10px 28px;
+    background: transparent;
+    border: 2px solid #096e8a;
+    border-radius: 6px;
+    font-size: 16px;
+    color: black;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background: #05a99d;
+    box-shadow: 5px 10px #096e8a;
+    transition: .5s;
+}
+
+.btn-box .btn:nth-child(2) {
+    background: transparent;
+    transition: .5s;
+}
+
+.btn-box .btn:nth-child(1):hover {
+    background: #919fd6;
+    box-shadow: 5px 10px #096e8a;
+    transition: .5s;
+}
+
+.btn-box .btn:nth-child(2):hover {
+    background: #919fd6;
+    box-shadow: 5px 10px #096e8a;
+}
+
+.btn.sign-up {
+    position: relative;
+    border: none;
+}
+
+.animate {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #deaaff;
+    animation: show-right 1s ease-out forwards;
+    animation-delay: calc(.3s * var(--i));
+}
+
+.animate.bg {
+    animation: fade-in 1s ease-out forwards;
+    animation-delay: 3.2s;
+}
+
+@keyframes show-right {
+    100% {
+        width: 0;
+    }
+}
+
+@keyframes fade-in {
+    100% {
+        opacity: 0;
+    }
+}
